@@ -21,7 +21,7 @@ body{
     flex-direction: column;
 }
 .inputContainer{
-    background-image: url("/bg_img.jpg");
+    background-image: url("./bg_img.jpg");
     background-repeat: no-repeat;
     padding: 50px;
     background-size: cover;
