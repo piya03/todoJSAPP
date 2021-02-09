@@ -19,6 +19,16 @@ function addTodoFun() {
   } else {
     todoObj = JSON.parse(todoFromLocal);
   }
+  let fail = todoObj.filter((each) => {
+    return each.title.toLowerCase() == titleVal.toLowerCase();
+  });
+  console.log("addTodoFun -> fail", fail);
+
+  if (fail.length > 0) {
+    alert("Title name is already exist");
+    return;
+  }
+
   todoObj.push({
     id: Math.random() + 1,
     title: titleVal,
