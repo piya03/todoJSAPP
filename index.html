@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class='container'>
+
+        <h2 class='heading'>Vanilla JS Todo APP</h2>
+        <div class="inputContainer">
+          <input type="text" placeholder="Title" id='todoTitle' value="">
+          <textarea rows="7" cols="28" id='enterDiscription' placeholder="Enter Describe here..." value=''></textarea> 
+          <button id='addTodo'>Submit</button>
+          <button id='updateTodo' class="hide">Update</button>
+        </div>
+        <input type="text" id='search' placeholder="Search By Title or description.." value=""/>
+
+        <ul class="allList"> </ul>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
