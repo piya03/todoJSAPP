@@ -22,7 +22,6 @@ function addTodoFun() {
   let fail = todoObj.filter((each) => {
     return each.title.toLowerCase() == titleVal.toLowerCase();
   });
-  console.log("addTodoFun -> fail", fail);
 
   if (fail.length > 0) {
     alert("Title name is already exist");
